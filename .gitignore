@@ -4,9 +4,12 @@ Thumbs.db
 .project
 .settings
 .vagrant
+
 *.db
 *.bak
 *.swp
+*.log
+
 src/files
 .htaccess
 config.ini
