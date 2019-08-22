@@ -1,0 +1,30 @@
+---
+- name: create suvn.conf
+  template:
+    src: usvn_conf.j2
+    dest: /etc/apache2/sites-available/usvn.conf
+    owner: root
+    group: root
+    mode: '0644'
+  notify: restart apache
+
+- name: enable modules
+  apache2_module:
+    state: present
+    name: rewrite
+  notify: restart apache
+
+- name: disable sites
+  file:
+    path: /etc/apache2/sites-enabled/000-default.conf
+    follow: yes
+    state: absent
+  notify: restart apache
+
+- name: enable sites
+  file:
+    src: /etc/apache2/sites-available/usvn.conf
+    dest: /etc/apache2/sites-enabled/usvn.conf
+    follow: yes
+    state: link
+  notify: restart apache

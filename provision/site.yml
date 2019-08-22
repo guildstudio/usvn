@@ -1,0 +1,11 @@
+---
+- hosts: subversion
+  become: yes
+  become_user: root
+  roles:
+    - common
+    - webserver
+    - database
+    - subversion
+    - php
+    - usvn

@@ -1,0 +1,5 @@
+---
+- name: install mariadb
+  apt:
+    name:
+      - mariadb-server

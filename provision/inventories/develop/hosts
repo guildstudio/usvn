@@ -1,0 +1,2 @@
+[subversion]
+localhost   ansible_connection=local

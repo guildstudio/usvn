@@ -1,0 +1,9 @@
+---
+- name: install php
+  apt:
+    name:
+      - php
+      - php-xml
+      - php-mysql
+      - zend-framework
+      - libapache2-mod-php

@@ -1,0 +1,7 @@
+---
+- name: install subversion
+  apt:
+    name:
+      - subversion
+      - subversion-tools
+      - libapache2-mod-svn

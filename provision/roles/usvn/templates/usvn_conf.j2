@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+
+        ServerAdmin ikeda@guildstudio.co.jp
+
+        DocumentRoot /var/sites/usvn/src/public
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+        <Directory /var/sites/usvn/src/public>
+
+                Options +SymLinksIfOwnerMatch
+                AllowOverride All
+                Require all granted
+
+        </Directory>
+
+</VirtualHost>
