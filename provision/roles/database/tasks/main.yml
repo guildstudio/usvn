@@ -3,3 +3,19 @@
   apt:
     name:
       - mariadb-server
+      - python-mysqldb
+
+- name: create database admin user
+  mysql_user:
+    name: "{{ database_admin_user }}"
+    password: "{{ database_admin_pass }}"
+    priv: '*.*:ALL'
+    state: present
+
+- name: create new database
+  mysql_db:
+    name: usvn
+    state: present
+    encoding: utf8
+    collation: utf8_unicode_ci
+
