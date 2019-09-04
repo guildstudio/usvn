@@ -15,4 +15,17 @@
 
         </Directory>
 
+        <Location /svn/>
+
+                ErrorDocument 404 default
+                DAV svn
+                Require valid-user
+                SVNParentPath {{ svn_path }}/svn
+                SVNListParentPath off
+                AuthType Basic
+                AuthName "USVN"
+                AuthUserFile {{ svn_passwd }}
+                AuthzSVNAccessFile {{ svn_authz }}
+
+        </Location>
 </VirtualHost>

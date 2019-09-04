@@ -1,7 +1,7 @@
 ---
-- name: create suvn.conf
+- name: create apache suvn.conf
   template:
-    src: usvn_conf.j2
+    src: subversion_conf.j2
     dest: /etc/apache2/sites-available/usvn.conf
     owner: root
     group: root

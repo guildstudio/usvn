@@ -11,5 +11,6 @@ Thumbs.db
 *.log
 
 src/files
+data
 .htaccess
 config.ini
