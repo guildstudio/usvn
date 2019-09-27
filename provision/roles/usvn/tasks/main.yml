@@ -8,10 +8,16 @@
     mode: '0644'
   notify: restart apache
 
-- name: enable modules
+- name: enable rewrite module
   apache2_module:
     state: present
     name: rewrite
+  notify: restart apache
+
+- name: enable ssl module
+  apache2_module:
+    state: present
+    name: ssl
   notify: restart apache
 
 - name: disable sites
