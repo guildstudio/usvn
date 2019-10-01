@@ -1,13 +1,8 @@
-<IfModule mod_ssl.c>
-    <VirtualHost *:443>
+<VirtualHost *:80>
 
         ServerAdmin ikeda@guildstudio.co.jp
 
         DocumentRoot /var/sites/usvn/src/public
-
-        SSLEngine on
-        SSLCertificateFile {{ ssl_certificate_file }}
-        SSLCertificateKeyFile {{ ssl_certificate_key_file }}
 
         Timeout 300
         KeepAlive On
@@ -41,5 +36,4 @@
                 AuthzSVNAccessFile {{ svn_authz }}
 
         </Location>
-    </VirtualHost>
-</IfModule>
+</VirtualHost>
