@@ -67,7 +67,7 @@ class BrowserajaxController extends USVN_Controller
 		$path = str_replace('//', '/', $_GET['name']);
 		$project_name = str_replace(USVN_URL_SEP, '/',$this->_request->getParam('project'));
 		$SVN = new USVN_SVN($project_name);
-		$tab = $SVN->listFile($path);
+		$tab = $SVN->listFileLight($path);
 		ob_start();
 		echo $this->getTopLink($project_name, $path);
 

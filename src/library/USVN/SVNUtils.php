@@ -278,10 +278,47 @@ class USVN_SVNUtils
 				array_push($res, array("name" => (string)$list->name, "isDirectory" => true, "path" => str_replace('//', '/', $path . "/" . $list->name  . '/')));
 			}
 		}
-		
+
 		usort($res, array("USVN_SVNUtils", "listSvnSort"));
 		return $res;
 	}
+
+    public static function listSvnLight($repository, $path)
+    {
+        $escape_path = USVN_SVNUtils::getRepositoryPath($repository . '/' . $path);
+        $raw = USVN_ConsoleUtils::runCmdCaptureMessageUnsafe(USVN_SVNUtils::svnCommand("ls $escape_path"), $return);
+        if ($return) {
+            throw new USVN_Exception(T_("Can't list subversion repository: %s"), $raw);
+        }
+
+        $list = preg_split("/[\s]+/", $raw);
+        $res = array();
+        foreach ($list as $item) {
+            if (strlen($item) == 0) continue;
+
+            if (substr($item, -1) == "/") {
+                array_push($res,
+                    array(
+                        "name" => $item,
+                        "isDirectory" => true,
+                        "path" => str_replace('//', '/', $path . "/" . $item),
+                    )
+                );
+            }
+            else {
+                array_push($res,
+                    array(
+                        "name" => $item,
+                        "isDirectory" => false,
+                        "path" => str_replace('//', '/', $path . "/" . $item),
+                    )
+                );
+            }
+
+        }
+
+        return $res;
+    }
 
 	private static function listSvnSort($a,$b){
 		if($a["isDirectory"]){

@@ -44,6 +44,11 @@ class USVN_SVN
 		return USVN_SVNUtils::listSvn($this->_repository, $path);
 	}
 
+	public function listFileLight($path)
+	{
+		return USVN_SVNUtils::listSvnLight($this->_repository, $path);
+	}
+
 	/**
 	 * @param string Path to repository
 	 * @param int Number of revisiom (0 = no limit)
