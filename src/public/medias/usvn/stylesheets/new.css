@@ -167,7 +167,7 @@ div.error, div.warning {
 	float: left;
 	margin-top: 0px;
 	padding: 1px 10px 10px 10px;
-	color: #ffffff;
+	color: #000000;
 }
 
 #header #shaddow #header-wrapper #main-menu ul li a:hover {
@@ -175,7 +175,7 @@ div.error, div.warning {
 }
 
 #header #shaddow #header-wrapper #main-menu ul li a:hover span {
-	color: #ffffff;
+	color: #626262;
 }
 
 #header #shaddow #header-wrapper #main-menu ul li a#selected {
@@ -184,7 +184,7 @@ div.error, div.warning {
 
 #header #shaddow #header-wrapper #main-menu ul li a#selected span {
 	font-weight: bold;
-	color: #2ABBF5;
+	color: #d71718;
 }
 
 /* @end */
