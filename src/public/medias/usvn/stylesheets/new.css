@@ -1,4 +1,4 @@
-/* @override 
+/* @override
 	http://localhost/usvn-new/medias/usvn/stylesheets/new.css
 	http://localhost/usvn-hook/css
 */
@@ -6,7 +6,7 @@
 /*
    new.css
    USVN
-   
+
    Created by Zak on 2009-04-03.
    Copyright 2009 USVN Team. All rights reserved.
 */
@@ -42,7 +42,7 @@ li, p {
 img {
 	border: none;
 }
- 
+
 a {
 	color: #100076;
 	text-decoration: none;
@@ -112,76 +112,76 @@ div.error, div.warning {
 
 /* @group Header */
 #header {
-	background: #172933 url('<?php echo $this->images_directory ?>/header_bg2.png') repeat-x;
-	min-height: 124px;
+	background: #e5e5e5 url('<?php echo $this->images_directory ?>/header_bg2_gs.png') repeat-x;
+	min-height: 134px;
 }
- 
+
 #header #shaddow {
-	min-height: 124px;
+	min-height: 134px;
 	min-width: 950px;
 	margin-left: auto;
 	margin-right: auto;
-	background: transparent url('<?php echo $this->images_directory ?>/header_back.png') no-repeat 0px 0px;  
+	background: transparent url('<?php echo $this->images_directory ?>/header_back_gs.png') no-repeat 0px 0px;
 }
- 
+
 #header #shaddow #header-wrapper {
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
- 
+
 #header #shaddow #header-wrapper #logo {
-	width: 320px;
-	height: 124px;
+	width: 408px;
+	height: 134px;
 	float: left;
-/*	background: transparent url('<?php echo $this->images_directory ?>/logo_trans.png') no-repeat 0px 0px;*/
+	background: transparent url('<?php echo $this->images_directory ?>/logo_trans_gs.png') no-repeat 0px 0px;
 }
- 
+
 #header #shaddow #header-wrapper #main-menu {
-	height: 124px;
+	height: 134px;
 	width: 530px;
 	float: left;
 	text-align: center;
 	vertical-align: bottom;
 }
- 
+
 #header #shaddow #header-wrapper #main-menu ul {
 	display: inline;
 	float: right;
 	margin-top: 92px;
 }
- 
+
 #header #shaddow #header-wrapper #main-menu ul li {
 	display: inline;
 	position: relative;
 	margin-top: 92px;
 }
- 
+
 #header #shaddow #header-wrapper #main-menu ul li a {
 	height: 32px;
 	float: left;
 	text-decoration: none;
 }
- 
+
 #header #shaddow #header-wrapper #main-menu ul li a span {
 	float: left;
 	margin-top: 0px;
 	padding: 1px 10px 10px 10px;
 	color: #ffffff;
 }
- 
+
 #header #shaddow #header-wrapper #main-menu ul li a:hover {
 	background: transparent url('<?php echo $this->images_directory ?>/up_arrow.png') repeat-x center -50px;
 }
- 
+
 #header #shaddow #header-wrapper #main-menu ul li a:hover span {
 	color: #ffffff;
 }
- 
+
 #header #shaddow #header-wrapper #main-menu ul li a#selected {
 	background: transparent url('<?php echo $this->images_directory ?>/up_arrow.png') repeat-x center -50px;
 }
- 
+
 #header #shaddow #header-wrapper #main-menu ul li a#selected span {
 	font-weight: bold;
 	color: #2ABBF5;
@@ -194,17 +194,17 @@ div.error, div.warning {
 /*	background: url('<?php echo $this->images_directory ?>/container_bg.png') repeat-x; */
 	min-height: 340px;
 }
- 
+
 #container #container-wrapper {
 	width: 998px;
 	margin-left: auto;
 	margin-right: auto;
 }
- 
+
 #container #container-wrapper #sub-menu {
 	background-color: #E4F2FD;
 }
- 
+
 #container #container-wrapper #main {
 	border: 1px dotted #d6d6d6;
 	border-top: none;
@@ -214,10 +214,10 @@ div.error, div.warning {
 	margin-left: 145px;
 	margin-right: 145px;
 }
- 
+
 #container #container-wrapper #hspacer {
 }
- 
+
 #container #container-wrapper #footer {
 	display: none;
 	height: 50px;

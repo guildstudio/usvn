@@ -7,7 +7,7 @@ html, body {
 	height: 100%;
 	background: #FFFFFF;
 	font-size: small;
-	background: url(../images/header_bg2.png) repeat-x;
+	background: url(../images/header_bg2_gs.png) repeat-x;
 }
 
 img {
@@ -50,7 +50,7 @@ img {
 #usvn_header {
 	margin-left: auto;
 	margin-right: auto;
-	background: url(../images/header_back.png) no-repeat;
+	background: url(../images/header_back_gs.png) no-repeat;
 	height: 134px;
 	margin-top: 0px;
 }
