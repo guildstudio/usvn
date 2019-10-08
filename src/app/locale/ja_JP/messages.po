@@ -111,7 +111,7 @@ msgstr "パスワードが間違っています"
 
 #: ../../../www//USVN/SVNUtils.php:174
 msgid "Commit by USVN"
-msgstr "USVNによるコミット"
+msgstr "GS SVN によるコミット"
 
 #: ../../../www//USVN/SVNUtils.php:177
 #, php-format
@@ -291,7 +291,7 @@ msgstr ""
 #: ../../../www//USVN/TranslationTest.php:63
 #: ../../../www//views/login/login.phtml:2
 msgid "Welcome to USVN"
-msgstr "USVNへようこそ"
+msgstr "GS SVN へようこそ"
 
 #: ../../../www//USVN/Config.php:37
 #: ../../../www//install/Install.php:144
@@ -431,16 +431,14 @@ msgstr "管理メニュー"
 
 #: ../../../www//views/adminadmin/index.phtml:3
 msgid "USVN version: "
-msgstr "USVNのバージョン: "
+msgstr "GS SVN のバージョン: "
 
 #: ../../../www//views/adminadmin/index.phtml:7
 #, php-format
 msgid ""
 "Your version of USVN is out of date. A new version %s is available on\n"
 "\t<a href=\"http://www.usvn.info\">http://www.usvn.info</a>."
-msgstr ""
-"古いバージョンのUSVNです。\n"
-"\t<a href=\"http://www.usvn.info\">ここから</a>新しいバージョン(%s)のUSVNが取得できます。"
+msgstr "古いバージョンの GS SVN です。"
 
 #: ../../../www//views/profile/index.phtml:15
 #: ../../../www//views/useradmin/profile.phtml:6
@@ -501,7 +499,7 @@ msgstr "PHPのバージョン:"
 
 #: ../../../www//views/systemreportadmin/index.phtml:4
 msgid "USVN version:"
-msgstr "USVNのバージョン:"
+msgstr "GS SVN のバージョン:"
 
 #: ../../../www//views/systemreportadmin/index.phtml:5
 msgid "Translation:"
@@ -617,7 +615,7 @@ msgstr "パスワード"
 
 #: ../../../www//views/useradmin/import.phtml:4
 msgid "This form allow you to add to USVN all users contents into an apache password file."
-msgstr "ApacheのパスワードファイルをインポートしてUSVNのユーザに追加できます。"
+msgstr "Apacheのパスワードファイルをインポートして GS SVN のユーザに追加できます。"
 
 #: ../../../www//views/useradmin/import.phtml:10
 msgid "Upload"
@@ -849,7 +847,7 @@ msgstr "エラー"
 #: ../../../www//install/install-commandline.php:36
 #: ../../../www//install/index.php:87
 msgid "USVN is already install."
-msgstr "USVNは既にインストールされています"
+msgstr "GS SVN は既にインストールされています"
 
 #: ../../../www//install/views/footer.html:3
 msgid "Copyright USVN"
@@ -892,11 +890,11 @@ msgstr "次へ"
 
 #: ../../../www//install/views/step4.html:2
 msgid "Configure USVN"
-msgstr "USVNを設定します"
+msgstr "GS SVN を設定します"
 
 #: ../../../www//install/views/step4.html:3
 msgid "Settings of general configuration of USVN. You can keep default settings."
-msgstr "USVNの基本設定。よく分からない場合はそのままにしてください。"
+msgstr "GS SVN の基本設定。よく分からない場合はそのままにしてください。"
 
 #: ../../../www//install/views/step4.html:12
 msgid "Page title"
@@ -908,7 +906,7 @@ msgstr "Subversionレポジトリ"
 
 #: ../../../www//install/views/step4.html:31
 msgid "Location where usvn will create subversion repository."
-msgstr "USVNがSubversionレポジトリを作成するディレクトリを設定します"
+msgstr "GS SVN がSubversionレポジトリを作成するディレクトリを設定します"
 
 #: ../../../www//install/views/step4.html:45
 msgid "Subversion password file "
@@ -916,7 +914,7 @@ msgstr "Subversionパスワードファイル"
 
 #: ../../../www//install/views/step4.html:46
 msgid "Location where usvn will create password file."
-msgstr "USVNが管理するパスワードファイルのパス"
+msgstr "GS SVN が管理するパスワードファイルのパス"
 
 #: ../../../www//install/views/step4.html:60
 msgid "Subversion access file"
@@ -924,7 +922,7 @@ msgstr "Subversionアクセスファイル"
 
 #: ../../../www//install/views/step4.html:61
 msgid "Location where usvn will create access file."
-msgstr "USVNが管理するSVNアクセス管理ファイルのパス"
+msgstr "GS SVN が管理するSVNアクセス管理ファイルのパス"
 
 #: ../../../www//install/views/step4.html:75
 msgid "Subversion url"
@@ -940,7 +938,7 @@ msgstr "インストールが終了しました"
 
 #: ../../../www//install/views/step8.html:3
 msgid "You can now enjoy of USVN."
-msgstr "それではUSVNをお楽しみください！"
+msgstr "それでは GS SVN をお楽しみください！"
 
 #: ../../../www//install/views/step8.html:7
 msgid "Apache configuration"
@@ -956,11 +954,11 @@ msgstr "設定後、Apacheを再起動<kbd>（apache2ctl restartもしくはserv
 
 #: ../../../www//install/views/step8.html:18
 msgid "Connect to USVN"
-msgstr "USVNに接続する"
+msgstr "GS SVN に接続する"
 
 #: ../../../www//install/views/head.html:201
 msgid "USVN installation"
-msgstr "USVNのインストール"
+msgstr "GS SVN のインストール"
 
 #: ../../../www//install/views/step7.html:2
 msgid "Check for new version"
@@ -1050,7 +1048,7 @@ msgstr "管理者ユーザの作成"
 
 #: ../../../www//install/views/step6.html:40
 msgid "Creation of the first administrator of USVN."
-msgstr "最初のUSVN管理ユーザの作成。"
+msgstr "最初の GS SVN 管理ユーザの作成。"
 
 #: ../../../www//install/views/step6.html:75
 msgid "System"
@@ -1116,7 +1114,7 @@ msgstr "タイトルが空です。"
 
 #: ../../../www//install/Install.php:441
 msgid "USVN can't run with php's safe mode."
-msgstr "PHPのセーフモードではUSVNは動作しません。"
+msgstr "PHPのセーフモードでは GS SVN は動作しません。"
 
 #: ../../../www//install/Install.php:445
 msgid "Subversion is not install on your system. If you are under Windows install "
