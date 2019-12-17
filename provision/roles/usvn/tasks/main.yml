@@ -12,6 +12,13 @@
   apache2_module:
     state: present
     name: rewrite
+  apache2_module:
+    state: present
+    name: headers
+  apache2_module:
+    state: present
+    name: log_forensic
+
   notify: restart apache
 
 - name: disable sites

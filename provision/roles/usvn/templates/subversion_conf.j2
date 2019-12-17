@@ -14,6 +14,9 @@
 
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
+        ForensicLog ${APACHE_LOG_DIR}/forensic.log
+
+        RequestHeader edit Destination ^https http early
 
         <Directory /var/sites/usvn/src/public>
 
